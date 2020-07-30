@@ -8,7 +8,7 @@ import (
 
 const (
 	Protocol     = "/key/swarm/psk/1.0.0/"
-	BaseEncoding = "base16"
+	BaseEncoding = "/base16/"
 	KeyLength    = 32
 )
 
