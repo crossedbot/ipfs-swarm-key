@@ -11,7 +11,7 @@ const (
 	KeyLength = 32
 
 	// Encodings
-	Base16Encoding = "base16"
+	Base16Encoding = "/base16/"
 )
 
 // Key represents the interface to a IPFS swarm key
