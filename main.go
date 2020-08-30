@@ -29,9 +29,13 @@ func main() {
 	)
 }
 
+// fatal prints the given message and exits on the given error
 func fatal(err error, msg string) {
 	if err != nil {
-		logger.Error(fmt.Errorf("failed to start service: %s", err))
+		if msg != "" {
+			err = fmt.Errorf("%s: %s", msg, err)
+		}
+		logger.Error(err)
 		os.Exit(FatalCode)
 	}
 }
