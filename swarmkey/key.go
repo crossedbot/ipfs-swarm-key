@@ -45,7 +45,7 @@ func (k *key) Bytes() []byte {
 	return []byte(k.String())
 }
 
-// Bytes returns the string representation of key
+// String returns the string representation of key
 func (k *key) String() string {
 	return fmt.Sprintf(
 		"%s\n%s\n%s",
